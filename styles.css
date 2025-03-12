@@ -1,0 +1,123 @@
+.Btn-servicesOffered{background-color: #fff;
+   color: black; 
+   padding: 10px 20px; 
+   border: solid;
+    border-radius: 5px;
+   position: relative;
+  bottom: 0;
+  left: 120px;}
+ #corporateEngagement{width: 33%;
+  display: inline-block;
+
+}
+  #YouthEngagement{width:33%;
+    display:inline-block;
+ 
+  }
+  #SocialEngagement{width:33%;
+    display:inline-block;}
+    #space{height:100px}
+#what-do-people-say{text-align: center;
+font-size:60px;}
+video{
+  width: 100%;
+height:400px;
+;}
+#contact{font-size: 40px;}
+
+form {
+  width: 50%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.contact-a{font-size: 20px;}
+p{font-size: 22px;}
+nav {
+  position: fixed;
+  top: 8px;
+  right: 0;
+  background-color: #fff;
+  padding: 8px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 0 10px rgba(240, 234, 234, 0.5);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+  transition: background-color 0.5s;
+}
+
+nav li:hover {
+  background-color: #444;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: orange;
+}
+#contacts{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+#end-image{
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+
+
