@@ -1,80 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Vutomi Simulations</title>
-    </head>
-    <body> 
-        <main>  
-            <header>
-                <nav>
-                    <ul>
-                      <li><a href="#about-us">About Us</a></li><br>
-                      <li><a href="#services-offered">Services Offered</a></li><br>
-                      <li><a href="#what-we-do">What We Do</a></li><br>
-                      <li><a href="#testimonials">What People Say</a></li><br>
-                      <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                  </nav>
-                  
-            </header>
-           <section id="vutomi-intro">
-            <img src="vutomi-logo.png" alt="logo">
-           </section>
-           <section id="about-us">
-            <img src="about us.png" alt="about us">
-           </section>
-           <section id="services-offered">
-            <img src="Services Offered .png" alt="services offered">
-            <section id="engagement">
-            <img src="corporate Engagement img.png" alt="corp engagement img">  
-            <img src="youth Engagement img.png" alt="youth engagement img">
-            <img src="Social engagement img.png" alt="social engagement img">
-            </section>
-           </section>
-           <section id="space"></section>
-           <section id="what-we-do">
-            <div class="what-we-offer-div"><img src="what we do part 1.png"></div>
-           </section>
-           <section id="space"></section>
-           <section>
-            <div class="what-we-offer-div"><img src="what we do part 2.png"></div>
-           </section>
-           <section id="space"></section>
-           <section>
-            <div class="what-we-offer-div"><img src="what we do part 3 .png"></div>
-           </section>
-           <section id="space"></section>
-           <section id="testimonials"><h1 id="what-do-people-say">What do people say about Vutomi</h1>
-                <video controls>
-                <source src="Vutomi video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video> 
-        </section>
-        <br><br>
-        <img id="end-image" src="thank you message.png" >
-        <section id="contacts" >
-            <h1 id="contact">Contact us:</h1>
-           <p>E-mail: <a class="contact-a" href="mailto:Vutomi@mabparkholdings.com">Vutomi@mabparkholdings.com</a><br>
-           WhatsApp: <a class="contact-a" href="tel:+27767812386">+27 76 781 2386</a></p>
-            <form  action="mailto:rifumomabasa1@gmail.com" method="post">
-                <h2>Full Name</h2>
-                <label for="firstname">First name:</label>
-                <input type="text" name="firstname" placeholder="First name"><br><br>
-                <label for="lastname">Last name:</label>
-                <input type="text" name="lastname" placeholder="Last name"><br><br>
-                <h2>E-mail</h2>
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="Email"><br><br>
-                <label for="message">Message:</label>
-                <textarea name="message" placeholder="Enter your message here..." rows="5" cols="30"></textarea><br><br>
-                <input type="submit" value="Submit">
-              </form>  
-              
-        </section>
-        <br>
-        </main>
-    </body>
+<head>
+<title>Vutomi Simulations</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: "Lato", sans-serif}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+ <nav style="position: fixed;
+ top: 8px;
+ left: 0;
+ background-color: #fff;
+ padding: 8px;
+ border-bottom-left-radius: 10px;">
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#about-us" class="w3-bar-item w3-button w3-padding-large">About us</a>
+    <a href="#services-offered" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Services Offered</a>
+    <a href="#testimonials" class="w3-bar-item w3-button w3-padding-large w3-hide-small">What People Say</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contacts</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</nav>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px;">
+  <a href="#about-us" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About us</a>
+  <a href="#services-offered" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Services Offered</a>
+  <a href="#testimonials" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">What people say</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contacts</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- logo Image -->
+  <div >
+    <img src="vutomi-logo.png" style="width:100%">
+  </div><br><br>
+  <!-- The about us section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;max-width: 100%;" id="about-us">
+    <img src="about us.png" alt="services offered"></div><br>
+
+  <!-- The services offered Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;max-width: 100%;" id="services-offered">
+    <img src="Services Offered .png" alt="services offered"></div>
+    <section style="display: inline;">
+    <div style="display: inline-block; width: 30%;"><img src="corporate Engagement img.png" alt="corp engagement img"><br><a href="what we do part 1.png"><button  class="learn-more-button" style="background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;">Learn More</button></a>
+    </div>
+    <div style="display: inline-block; width: 30%;"><img src="youth Engagement img.png" alt="youth engagement img"><br><a href="what we do part 2.png"><button class="learn-more-button" style="background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;">Learn More</button></a>
+    </div>
+    <div style="display:inline-block; width: 30%;"><img src="Social engagement img.png" alt="social engagement img"><br><a href="what we do part 3 .png"><button class="learn-more-button" style="background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;">Learn More</button></a></div>
+    </div>
+</section><br><br>
+
+
+  <!-- The testimonials Section -->
+  <section class="w3-black" id="testimonials" style="width:100% ;"><h1 id="what-do-people-say" style="width: max-content; text-align: center;">What do people say about Vutomi</h1>
+        <video controls style="width: 100%;
+height:400px;">
+        <source src="Vutomi video.mp4" type="video/mp4" style="width: 100%;">
+        Your browser does not support the video tag.
+      </video> 
+    </section>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +27 781 2386<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: Vutomi@mabparkholdings.com<br>
+      </div>
+      <br>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by Mabparkholdings</p>
+</footer>
+
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
 </html>
